@@ -15,7 +15,7 @@ function Navbar() {
                         <NavLink to="/" className="nav-link active">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/products" className="nav-link">Products</NavLink>
+                        <NavLink to="/prodotti" className="nav-link">Prodotti</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="/chi-siamo" className="nav-link">Chi Siamo</NavLink>
