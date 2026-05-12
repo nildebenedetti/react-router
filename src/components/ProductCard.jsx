@@ -14,7 +14,7 @@ function ProductCard({
                 <span>&euro; </span>{productPrice}
             </p>
             <p className="card-text productCategory">{productCategory}</p>
-            <a href="#" className="btn btn-primary">Add to cart</a>
+            <a href="#" className="btn btn-dark">Add to cart</a>
         </div>
     </div>
 }
