@@ -5,8 +5,12 @@ import ChiSiamo from "./pages/ChiSiamo";
 import Prodotti from "./pages/Prodotti";
 
 function App() {
-  return <div>
-    ciao
-  </div>
+  return (
+    <BrowserRouter>
+    <Routes>
+      <Route path="" Component={Home} />
+    </Routes>
+    </BrowserRouter>
+  )
 }
 export default App;
