@@ -44,21 +44,17 @@ function Prodotti() {
             </div>
         </header>
         <div className="container d-flex justify-content-center mx-3">
-            <div className="row d-flex justify-content-center align-items-center">
-                <div>
-                    <ul>{productList.map(product => {
-                        return <li key={product.id}>
-                            <ProductCard
+            <div className="row g-2 d-flex flex-row justify-content-center align-items-flex-start">
+                    {productList.map(product => {
+                        return  <ProductCard
+                                key={product.id}
                                 productImg={product.image}
                                 productName={product.title}
                                 productPrice={product.price}
                                 productCategory={product.category}
                                 productDescription={product.description}
                             />
-                        </li>
                     })}
-                    </ul>
-                </div>
             </div>
         </div>
 
