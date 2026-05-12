@@ -4,3 +4,16 @@
   width: 90px;
   aspect-ratio: 1/1;
 }
+
+.product-list {
+  list-style: none;
+}
+
+.card {
+  width: 400px;
+
+  img {
+    max-width: 200px;
+  }
+}
+
