@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 
 function ChiSiamo() {
-  return <div claassName="container">
+  return <div className="container">
 <header>
   <Navbar/>
 </header>
