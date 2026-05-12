@@ -22,3 +22,10 @@
   height:350px;
   width:100%;
 }
+
+.hero-banner {
+  width:100%;
+  min-height:300px;
+  object-fit:cover;
+  object-position: left;
+}
