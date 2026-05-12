@@ -10,14 +10,26 @@ function Prodotti() {
     di modo che sia dinamica e aggiornata quando navigo questa pagina
     e gestire eventuali trigger che verranno aggiunti in futuro*/}
 
-    const { productList, setProductList } = useState([]);
+    const [ productList, setProductList ] = useState([]);
+
     {/* adesso devo scrivermi la fetch dei prodotti */ }
     useEffect (() => {
+        const URL_API = 'https://fakestoreapi.com/products';
 
+        fetch(URL_API)
+        .then ( result => {
+            return result.json();
+        })
+        .then ( data => {
+            setProductList(data);
+        })
+        .catch ( error => {
+            console.error('errore durnte importazione dati',error)
+        })
 
     }, []);
 
-}
+
 
 return <div>
     <Navbar />
@@ -31,9 +43,12 @@ return <div>
     </header>
     <div className="container d-flex justify-content-center mx-3">
         <div className="row d-flex justify-content-center align-items-center">
-
+        <div>
+            {JSON.stringify(productList)}
+        </div>
         </div>
     </div>
+
 
 </div>
 }
