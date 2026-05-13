@@ -20,7 +20,7 @@ function Prodotti() {
                 return result.json();
             })
             .then(data => {
-                setProductList(data);
+                return setProductList(data);
                 console.log(productList);
 
             })
@@ -45,12 +45,8 @@ function Prodotti() {
             <div className="row g-2 d-flex flex-row justify-content-center align-items-flex-start">
                     {productList.map(product => {
                         return  <ProductCard
-                                key={product.id}
-                                productImg={product.image}
-                                productName={product.title}
-                                productPrice={product.price}
-                                productCategory={product.category}
-                                productDescription={product.description}
+                            key={product.id}    
+                            product={product}
                             />
                     })}
             </div>
