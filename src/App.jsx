@@ -5,6 +5,7 @@ import ChiSiamo from "./pages/ChiSiamo";
 import Prodotti from "./pages/Prodotti";
 import NotFound from "./pages/NotFound";
 import MainLayout from "./layouts/MainLayout";
+import Product from "./pages/Product";
 
 function App() {
   return (
@@ -17,11 +18,9 @@ function App() {
           <Route path="/chi-siamo" Component={ChiSiamo} />
 
           <Route path="/prodotti" Component={Prodotti} />
-          {/** METTIAMO UN PATH PARMETRICO CREEANDO 
-           * UNA NEW PGE PRODUCT E colleghiamo con
-           * <Route path="products/:productId"Component={Product}>*/}
-          {/*<Route path="products/:productId" Component={Product} />
-           Inserisco la route per la pgina errore 
+          {/** inserisco path parametrico per  il componente product*/}
+          <Route path="products/:product.id" Component={Product} />
+           {/*Inserisco la route per la pgina errore 
       di modo che se fallisce la ricerca a cascata 
       mostri la pag di errore 404 */}
           <Route path="*" Component={NotFound} />
