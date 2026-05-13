@@ -13,7 +13,7 @@ function ProductCard({
                 <span>&euro; </span>{price}
             </p>
             <p className="card-text productCategory">{category}</p>
-            <Link to={`/products/${id}`} className="btn btn-dark">Scopri</Link> 
+            <Link to={`/prodotti/${id}`} className="btn btn-dark">Scopri</Link> 
         </div>
     </div>
 }
