@@ -15,11 +15,11 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="" element={<Home/>} />
 
-          <Route path="/chi-siamo" elemnent={<ChiSiamo />} />
+          <Route path="chi-siamo" element={<ChiSiamo />} />
 
-          <Route path="/prodotti" element={<Prodotti />} />
+          <Route path="prodotti" element={<Prodotti />} />
           {/** inserisco path parametrico per  il componente product*/}
-          <Route path="/prodotti/:id" element={<Product />} />
+          <Route path="prodotti/:id" element={<Product />} />
           {/*Inserisco la route per la pgina errore 
       di modo che se fallisce la ricerca a cascata 
       mostri la pag di errore 404 */}
