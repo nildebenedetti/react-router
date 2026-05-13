@@ -20,7 +20,8 @@ function App() {
           {/** METTIAMO UN PATH PARMETRICO CREEANDO 
            * UNA NEW PGE PRODUCT E colleghiamo con
            * <Route path="products/:productId"Component={Product}>*/}
-          {/* Inserisco la route per la pgina errore 
+          {/*<Route path="products/:productId" Component={Product} />
+           Inserisco la route per la pgina errore 
       di modo che se fallisce la ricerca a cascata 
       mostri la pag di errore 404 */}
           <Route path="*" Component={NotFound} />
