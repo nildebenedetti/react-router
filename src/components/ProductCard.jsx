@@ -1,3 +1,4 @@
+import { Link, NavLink} from "react-router";
 
 function ProductCard({
    product
@@ -12,11 +13,7 @@ function ProductCard({
                 <span>&euro; </span>{price}
             </p>
             <p className="card-text productCategory">{category}</p>
-            {/*<Link to="/" className="btn btn-dark">Scopri</Link> 
-             DEVO PASSARE IL LINK AL BOTTONE 
-            nella map creiamo anche il link
-            <link to={`/products/${product.id}}>
-            */}
+            <Link to={`/products/${id}`} className="btn btn-dark">Scopri</Link> 
         </div>
     </div>
 }
