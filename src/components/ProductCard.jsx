@@ -8,7 +8,6 @@ function ProductCard({
         <div><h5 className="card-title productName py-3">{title}</h5></div>
         <img src={image} className="card-img-top" alt={title}></img>
         <div className="card-body">
-            <p className="card-text productDescription">{description}</p>
             <p className="card-text productPrice">
                 <span>&euro; </span>{price}
             </p>
