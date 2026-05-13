@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router";
 import { useState } from "react";
 import { useEffect } from "react";
-import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 
 
@@ -34,7 +33,6 @@ function Prodotti() {
 
 
     return <div>
-        <Navbar />
         <header className="header d-flex justify-content-center py-3 flex-column">
             <div className="px-3">
                 <h3> Prodotti</h3>
