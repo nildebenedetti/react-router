@@ -1,4 +1,4 @@
-import { Link, NavLink} from "react-router"
+import { Link, NavLink } from "react-router"
 
 function NotFound() {
     return <div className="container vh-100 d-flex align-items-center justify-content-center">
