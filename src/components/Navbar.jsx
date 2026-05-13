@@ -3,9 +3,9 @@ import { Link, NavLink } from "react-router";
 function Navbar() {
     return <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-            <a className="navbar-brand" href="">
+            <Link to="/" className="navbar-brand" >
                 <img src="./images/lastdrop-logo-1.png" alt="lastdrop logo" className="navbar-logo"></img>
-            </a>
+            </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

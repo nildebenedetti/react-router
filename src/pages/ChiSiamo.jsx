@@ -3,10 +3,7 @@ import Navbar from "../components/Navbar";
 
 
 function ChiSiamo() {
-  return <div className="container">
-<header>
-  <Navbar/>
-</header>
+  return <main>
       <section className="container py-5">
         <div className="row align-items-center">
           <div className="col-md-6">
@@ -64,6 +61,6 @@ function ChiSiamo() {
           Sfoglia la Collezione
         </Link>
       </section>
-      </div>
+    </main>
 }
 export default ChiSiamo
